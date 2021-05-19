@@ -80,7 +80,7 @@ export default {
     getData() {
       axios
         .get(
-          `http://api.openweathermap.org/data/2.5/weather?q=${this.input}&appid=6ee65708a9809409cae1f996b3c7a0a1`
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.input}&appid=6ee65708a9809409cae1f996b3c7a0a1`
         )
         .then((response) => {
           console.log(response);
