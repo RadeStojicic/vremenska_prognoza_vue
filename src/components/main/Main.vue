@@ -13,7 +13,7 @@
         placeholder="Smederevo"
       />
 
-      <button @click="getData()" class="btn_prikazi">
+      <button ref="myBtn" @click="getData()" class="btn_prikazi">
         Prikaži
       </button>
     </div>
@@ -195,6 +195,9 @@ export default {
         this.mesec = "Decembar";
       }
     },
+  },
+  mounted() {
+    this.$refs.myBtn.click();
   },
 };
 </script>
@@ -456,6 +459,9 @@ export default {
     margin-top: -35px;
     width: 180px;
   }
+  .div2 {
+    text-align: left;
+  }
   .temperatura {
     font-size: 6vw;
   }
@@ -464,10 +470,11 @@ export default {
   }
   .div3 p {
     font-size: 4vw;
-    text-align: center;
+    text-align: left;
   }
   .div4 p {
     font-size: 4vw;
+    text-align: left;
   }
   .vreme_sutra {
     background-color: rgb(221, 247, 255);
