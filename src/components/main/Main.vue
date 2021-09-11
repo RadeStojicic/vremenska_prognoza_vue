@@ -62,9 +62,9 @@ import oluja from "./Oluja.png";
 export default {
   data() {
     return {
-      input: "Smederevo",
+      input: "Belgrade",
       temperatura: "",
-      grad: "Smederevo",
+      grad: "Belgrade",
       vreme: "",
       oblacnost: "",
       brzina_vetra: "",
